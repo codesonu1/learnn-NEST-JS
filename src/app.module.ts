@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import typeormConfig from './config/mysql.config';
 import { dataSource } from './database/data-source';
-import { Usermodule } from './user/user.module';
+import { Usermodule } from './modules/user/user.module';
 
 @Module({
   imports: [
@@ -15,4 +15,4 @@ import { Usermodule } from './user/user.module';
     }),
   ],
 })
-export class AppModule { }
+export class AppModule {}
